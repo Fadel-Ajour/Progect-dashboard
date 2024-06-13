@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
+}
+body {
+    background-color: #001;
+    display: flex;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.img-box{
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    overflow: hidden;
+    border: 3px solid white;
+    flex-shrink: 0;
+}
+.img-box img{
+    width: 100%;
+}
+.profile h2{
+    text-transform: capitalize;
+}
+.menu{
+    background-color: #123;
+    width:60px;
+    height: 100vh;
+    padding: 20px;
+    overflow: hidden;
+    transition: .5s;
+}
+.menu:hover{
+    /* width: 260px; */
+    width: 385px;
+}
+li{
+list-style: none;
+}
+ul li a{
+    display: flex;
+    text-decoration: none;
+    margin: 5px;
+    /* font-size: 18px; */
+    border-radius: 10px;
+    padding: 10px;
+    gap: 40px;
+    transition: .5s;
+    align-items: center;
+}
+ul{
+    position: relative;
+    height: 95%;
+}
+ul li a:hover, .dashboard,.data-info .box:hover, td:hover {
+    background-color: #ffffff55;
+}
+.log-out{
+    position: absolute;
+    bottom:0 ;
+    width: 100%;
+}
+.log-out a{
+background-color: red;
+}
+ul li a i{
+    font-size: 30px;
+
+}
+.content{
+width: 100%;
+/* ممكن يكون فس خطا في ال marginلو في اشي خلط جرب 10 من كل الجهات */
+}
+.title-info{
+    display: flex;
+    margin: 15px 14px 0 14px;
+    /* وهان 10 من فوث وتحت بس */
+    /* width: 100%; */
+    height: 6%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 11px 4px 8px;
+    border-radius: 9px;
+    background-color: #0481ff;
+}
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 14px 0 14px;
+}
+.data-info .box {
+    background-color: #123;
+    height: 176px;
+    width: 174px;
+    display: flex;
+    align-items: center;
+    border-radius: 6px;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+.data-info .box i{
+    font-size: 35px;
+}
+.data-info .box .data{
+    text-align: center;
+}
+.data-info .box .data span{
+    font-size: 25px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 6px;
+    margin: 5px 0 0 0;
+
+}
+
+td,th{
+    background-color: #123;
+    height: 50px;
+    border-radius: 5px;
+}
+th{
+    background-color: #0481ff;
+}
+.price{
+    background-color: green;
+    padding: 3px;
+    border-radius: 3px;
+
+}
+.count{
+    background-color: yellow;
+    color: black;
+    padding: 3px;
+    border-radius: 3px;
+
+}
